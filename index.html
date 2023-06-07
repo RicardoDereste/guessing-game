@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Guessing Game</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="js/scripts.js" defer></script>
+  </head>
+  <body>
+    <h1>Guessing Game</h1>
+
+    <div class="container">
+      <div id="difficulty-section">
+        <label for="difficulty">Choose the difficulty:</label>
+        <select id="difficulty">
+          <option value="" readonly>Select</option>
+          <option value="1">Easy</option>
+          <option value="2">Medium</option>
+          <option value="3">Hard</option>
+        </select>
+      </div>
+
+      <div id="game-section">
+        <p>
+          I'm thinking of a number between 1 and 100. Try to guess what it is!
+        </p>
+
+        <div id="guess-section">
+          <input
+            type="text"
+            id="guess"
+            placeholder="Type your answer here"
+          />
+          <button id="guess-btn">Submit</button>
+        </div>
+
+        <p id="result"></p>
+
+        <button id="reset-btn">Play again</button>
+
+        <p>Attempts remaining: <span id="tries-left"></span></p>
+      </div>
+    </div>
+  </body>
+</html>
